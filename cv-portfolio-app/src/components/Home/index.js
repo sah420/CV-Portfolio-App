@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import Logo from './Logo'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -14,7 +15,7 @@ const Home = () => {
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
-        }, 4000)
+        }, 6000)
     }, [])
 
     return (
@@ -41,6 +42,7 @@ const Home = () => {
                 <Link to='/contact' className='flat-button'>Contact Me</Link>
                 <a href={Cv} download className='flat-button'>Download CV</a>
             </div>
+            <Logo />
         </div>
     );
 }
