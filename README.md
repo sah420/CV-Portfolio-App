@@ -2,8 +2,12 @@
 A web application to display my portfolio and CV
 
 
+
+
 ## Front-End
 For the Front-End this project will utilize react.js
+
+
 
 
 ## Back-End
