@@ -80,6 +80,7 @@
 
 .work-experience {
     position: relative;
+    padding-bottom: 5%;
     left: 10%;
     top: 95%;
 
@@ -90,19 +91,68 @@
         font-weight: 350;
         margin-top: 0;
         position: relative;
-        margin-bottom: 40px;
+        
         left: 10px;
     }
     
     h2 {
-        font-style: 42px;
+        font-size: 24px;
         color: #ADD8E6;
         font-family: sans-serif;
-        font-weight: 300;
+        font-weight: bolder;
         min-width: fit-content;
         left: 45px;
         animation: pulse 1s;
+    }
+    
+    h3 {
+        font-size: 14px;
+        color: #115173;
+        left: 45px;
+    }
 
-        
+    p {
+        color: #fff;
+        font-size: 16px;
+        padding-bottom: 3%;
     }
 }  
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; /* Adjusting the container's width */
+    margin: 20px auto; /* Center the container horizontally and add vertical spacing */
+    padding: 0;
+    position: relative;
+    top: 85%
+}
+
+.skills-container > div {
+    transition: all 0.3s ease-in-out;
+    width: 15%; /* Box width */
+    height: 200px; /* Box height set to an absolute value so they are all equal */
+    border: 1.5px solid #fff;
+    border-radius: 35px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    box-sizing: border-box;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.skills-container h2 {
+    color: #ffd700;
+}
+
+.skills-container ul {
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Coolvetica';
+}

@@ -7,6 +7,7 @@ import { faHtml5, faCss3, faReact, faJsSquare, faNodeJs, faPython, faGitAlt } fr
 const About = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
+    const strArray = "About Me:".split("")
     const strArray2 = "Professional Work Experience:".split("")
 
     useEffect(() => {
@@ -21,13 +22,30 @@ const About = () => {
                 <h1>
                     <AnimatedLetters 
                         letterClass={letterClass}
-                        strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e', ':']}
-                        idx={15}
+                        strArray={strArray}
+                        idx={10}
                     />
                 </h1>
-                <p>Paragraph 1: Intro</p>
-                <p>Paragraph 2: Skills</p>
-                <p>Paragraph 3: Interests</p>
+                <p>I am Salem Motaz Salem Abu Hassan, a 22-year-old software engineer with a deep passion 
+                    for AI-driven solutions. My expertise as a Python Engineer, which I have been working at Elevatus 
+                    as since August 2023, has allowed me to develop innovative projects, including a drone control 
+                    system using ROS2. My academic journey at Nottingham Trent University, pursuing a BCs Computer 
+                    Science degree, has provided me with a comprehensive technical foundation. In addition to my academic 
+                    accomplishments, I've had the opportunity to develop AI systems for various applications, such as 
+                    chatbots, and I'm currently working on developing an AI photo stitcher for real estate platforms it my 
+                    free time.</p>
+                <p>My technical skills cover a wide range of programming languages including C++, HTML, CSS, SQL, Python, 
+                    Java, and JavaScript. I've also gained hands-on experience with frameworks and tools like React, 
+                    FastAPI, Springboot, and ROS2. I've developed a RESTful API for a web scraper that cleverly navigates 
+                    through proxy services to bypass CAPTCHAs. Once this scraper collects data from a website, it's stored 
+                    in a database, ensuring efficient data retrieval for subsequent requests. My expertise is further 
+                    solidified by certifications from platforms like Azure and Codecademy.</p>
+                <p>Beyond my professional pursuits, I'm an avid athlete. I enjoy activities like rock climbing, gym workouts, 
+                    Brazilian Jiu-Jitsu (BJJ), Mixed Martial Arts (MMA), and horse riding—a sport I've dedicated over 
+                    13 years to, even coming close to qualifying for the children's Olympics. Off-roading is another 
+                    passion of mine, offering both adventure and the joy of camaraderie during post drive hangouts. 
+                    My university years were not solely focused on academics; they were also a period of personal growth, 
+                    where I acquired various skills, many of which are detailed in my CV.</p>
             </div>
             <div className='stage-cube-cont'>
                 <div className='cubespinner'>
@@ -68,10 +86,8 @@ const About = () => {
                         <li>PostgreSQL</li>
                         <li>Azure</li>
                         <li>JSON</li>
+                        <li>Python FastAPI</li>
                     </ul>
-                </div>
-                <div className='fullstack-skills-container'>
-                    <h2>Fullstack Skills:</h2>
                 </div>
                 <div className='other-skills-container'>
                     <h2>Other Skills:</h2>
@@ -94,8 +110,16 @@ const About = () => {
                         idx={24}
                     />
                 </h1>
-                <h2>JP Holdings LTD</h2>
-                <p>Worked as a member of the hospitality and catering staff as well as IT member.</p>
+                <div className='experience-Elevatus'>
+                    <h2>Elevatus</h2>
+                    <h3>August 2023 - Present</h3>
+                    <p>Worked as a Python Engineer integrating third party applications into the system.</p>
+                </div>
+                <div className='experience-JP'>
+                    <h2>JP Holdings LTD</h2>
+                    <h3>July 2022 - December 2022</h3>
+                    <p>Worked as a member of the hospitality and catering staff as well as IT member.</p>
+                </div>
             </div>
                 
         </div>
